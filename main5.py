@@ -1,14 +1,21 @@
-word = input("Tell the 5 word: ")
-guess = input("Tell the 5 guess: ")
+word = input("Tell the 5-letter word: ")
+guess = input("Tell the 5-letter guess: ")
 
-a_list = []
+a_list = [0] * len(word)
+word_counts = {}  
 
 for i in range(len(word)):
     if word[i] == guess[i]:
-        a_list.append(2)
-    elif guess[i] in word and word[i] != guess[i] and guess[i] in word != word[i]:
-        a_list.append(1)
+        a_list[i] = 2
     else:
-        a_list.append(0)
+        if word_counts.get(word[i]) is not None:
+            word_counts[word[i]] += 1
+        else:
+            word_counts[word[i]] = 1
 
+    
+
+
+
+print(word_counts)
 print(a_list)

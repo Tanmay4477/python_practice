@@ -39,14 +39,13 @@ for x in pincodes:
         pincodeList.append(x['pincode'])
 
 for x in address:
-    for y in pincodeList:
-        if y == x['pincode'] and x['user_id'] not in userList:
-            userList.append(x['user_id'])
+    if x['pincode'] in pincodeList:
+        userList.append(x['user_id'])
         
     continue
 
 
-for x in userList:
+for x in set(userList):
     for y in users: 
         if y['user_id'] == x:
             userName.append(y['name'])
