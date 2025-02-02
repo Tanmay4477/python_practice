@@ -1,0 +1,10 @@
+{
+    "user1": {
+        "balance": 1000,
+        "locked": 0
+    },
+    "user2": {
+        "balance": 1000,
+        "locked": 0
+    }
+}
