@@ -1,10 +1,7 @@
 {
-    "user1": {
-        "balance": 1000,
-        "locked": 0
-    },
-    "user2": {
-        "balance": 1000,
-        "locked": 0
-    }
+  "user1": { "balance": 1000, "locked": 0 },
+  "user2": { "balance": 1000, "locked": 0 },
+  "user4": { "balance": 0, "locked": 0 },
+  "user5": { "balance": 0, "locked": 0 },
+  "user3": { "balance": 0, "locked": 0 }
 }

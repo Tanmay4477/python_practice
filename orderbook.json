@@ -1,12 +1,1 @@
-{
-    "BTC": {
-        "yes": {
-            "3.5": {
-                "total": 0,
-                "orders": [{"userId": "user1", "type": "reverse", "quantity": 0, "orderId": 1},
-                           {"userId": "user2", "type": "normal", "quantity": 0, "orderId": 2}
-                        ]
-            }
-        }
-    }
-}
+{"BTC": {"yes": {"3.5": {"total": 0, "orders": [{"userId": "user1", "type": "reverse", "quantity": 0, "orderId": 1}, {"userId": "user2", "type": "normal", "quantity": 0, "orderId": 2}]}}}, "3": {"no": {"3": {"total": 0, "orders": []}}}}
