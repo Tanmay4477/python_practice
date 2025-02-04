@@ -17,5 +17,8 @@ if buy_sell_type == "buy":
         print(e)
 
 else:
-    engine.sellSomething()
+    try:
+        engine.sellSomething()
+    except ValueError as e:
+        print(e)
 

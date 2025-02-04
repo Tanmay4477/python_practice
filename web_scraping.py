@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
-import codecs
 
 url = "https://quotes.toscrape.com/page/{}/"
 
@@ -22,7 +21,7 @@ def scrape_data(url):
         return data
     
     else:
-        raise ValueError("Url is not working or not able to fetch")
+        raise Exception("Url is not working or not able to fetch")
     
 
 def scrape_all_data(base_url, pages=5):
@@ -48,5 +47,5 @@ try:
     save_to_csv(csv)
     write_to_json(csv, "quotes.json")
     print("Scraping completed")
-except ValueError as e:
+except Exception as e:
     print(e)
