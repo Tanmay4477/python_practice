@@ -2,7 +2,7 @@
     "BTC": {
         "yes": {
             "3.5": {
-                "total": 4,
+                "total": 0,
                 "orders": [
                     {
                         "userId": "user1",
@@ -12,12 +12,12 @@
                     {
                         "userId": "user2",
                         "type": "normal",
-                        "quantity": 2
+                        "quantity": 0
                     },
                     {
                         "userId": "user1",
                         "type": "normal",
-                        "quantity": 2
+                        "quantity": 0
                     }
                 ]
             },
